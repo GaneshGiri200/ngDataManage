@@ -1,0 +1,32 @@
+h2{
+	color:#0362B1;
+	text-align: center;
+	padding-top: 1.5rem;
+}
+
+button {
+	float: right;
+	margin-right: 2rem;
+}
+
+button:hover {
+	transform: scale(1.1);
+}
+button:active {
+	transform: scale(1);
+}
+
+hr {
+	color: black;
+	height: 2px;
+}
+
+.content-box {
+	// border: 2px solid;
+	width: 96%;
+	margin: auto;
+}
+
+.content {
+	margin-bottom: 1rem;
+}

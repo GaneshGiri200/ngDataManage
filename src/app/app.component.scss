@@ -1,0 +1,174 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+
+.head {
+	background-color: rgb(30, 139, 195);
+	text-align: center;
+	height: 5rem;
+	box-shadow: 2px 2px 4px black;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	top: 0;
+
+	i {
+		font-size: 3rem;
+		margin: 10px;
+		color: honeydew;
+		text-shadow: 2px 2px 4px black;
+	}
+	h1 {
+		display: inline-block;
+		margin-left: 20px;
+		font-size: 2.2rem;
+		color: honeydew;
+		text-shadow: 2px 2px 4px black;
+	}
+}
+
+section {
+	.nav-box {
+		height: 100vh;
+		width: 8%;
+		top: .8rem;
+		background-color: rgb(129, 207, 224);
+		box-shadow: 2px 2px 4px black;
+		position: fixed;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+	}
+
+	.content-box {
+		background-color: #f5f6fa;
+		margin: 5rem 0 0 8%;
+		width: 92%;
+	}
+}
+
+.foot {
+	background-color: #444;
+	height: 3.4rem;
+	text-align: center;
+
+	.foot-content {
+		padding-top: 5px;
+	}
+
+	h6 {
+		color: honeydew;
+		font-size: 15.7px;
+		font-weight: normal;
+		margin-top: 2px;
+	}
+}
+
+.nav-icon-box {
+	width: 100%;
+}
+
+.nav-icon {
+	text-align: center;
+	margin-top: 4rem;
+	text-shadow: 1px 1px white;
+	display: flex-item;
+	align-item:center;
+
+	i {
+		font-size: 3.5rem;
+	}
+
+	i:hover {
+		color: #f5f6fa;
+		text-shadow: 2px 2px 4px black;
+		transform: scale(1.1);
+		transition: 200ms;
+	}
+
+	i:active {
+		transform: scale(1);
+		transition: 100ms;
+	}
+}
+
+.stdcolor {
+	color: #f5f6fa;
+	text-shadow: 2px 2px 4px black;
+}
+
+@media (max-width: 768px){
+
+	.head {
+		height: 4rem;
+
+
+		i {
+			font-size: 2rem;
+		}
+
+		h1 {
+			font-size: 25px;
+			margin-left: 10px;
+		}
+
+	}
+
+	section {
+		.nav-box {
+			width: 100%;
+			height: 4rem;
+			top: 4rem;
+		}
+
+		.content-box {
+			width: 100%;
+			margin: 8rem 0 0 0;
+		}
+	}
+
+	.nav-icon-box {
+		text-align: center;
+	}
+
+	.nav-icon {
+		display: inline-block;
+		margin-top: 0;
+
+		i {
+			font-size: 2.5rem;
+		}
+
+		.fa-users, .fa-book {
+			margin-right: 8rem;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+
+	.head {
+		i {
+			font-size: 1.4rem;
+			margin-top: 1.2rem;
+		}
+
+		h1 {
+			font-size: 21px;
+			margin-left: 0;
+		}
+	}
+
+	.nav-icon {
+
+		i {
+			font-size: 2.2rem;
+		}
+
+		.fa-users, .fa-book {
+			margin-right: 4rem;
+		}
+	}
+}

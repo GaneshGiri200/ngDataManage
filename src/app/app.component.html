@@ -1,0 +1,36 @@
+<header>
+  <div class="head">
+    <i class="fa fa-database" aria-hidden="true"></i>
+    <h1>Data Management System</h1>
+  </div>
+</header>
+
+<section>
+  
+  <div class="container-fluid">
+    <div class="nav-box">
+      <div class="nav-icon-box">
+        <div class="nav-icon">
+        <i class="fa fa-users" aria-hidden="true" title="Students" routerLink='students' (click)=student() [ngClass]="mystdClass"></i>
+      </div>
+      <div class="nav-icon">
+        <i class="fa fa-book" aria-hidden="true" title="Cources" routerLink='courses' (click)=course() [ngClass]="mycourseClass"></i>
+      </div>
+      <div class="nav-icon">
+        <i class="fa fa-university" aria-hidden="true" title="Lighthouse" routerLink='lighthouse' (click)=lighthouse() [ngClass]="mylightClass"></i>
+      </div>
+      </div>
+    </div>
+
+    <div class="content-box">
+      <router-outlet></router-outlet>
+      <div class="foot">
+        <div class="foot-content">
+          <h6>Designed & Developed by Ganesh M. Giri</h6> 
+          <h6>&copy; by Hematite Infotech Pvt. Ltd.</h6> 
+        </div>        
+      </div>
+    </div>
+  </div>
+
+</section>

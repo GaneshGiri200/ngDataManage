@@ -1,0 +1,74 @@
+.pagination {
+	.pages {
+		margin: auto;
+	}
+}
+.content-nav {
+	.col-md-8{
+		text-align: center;
+	}
+
+	.col-md-4, .col-md-8{
+		margin-top: 1rem;
+	}
+
+	button {
+		background-color: #f5f6fa;
+		padding: 1px 5px;
+		outline: none;
+		border: solid transparent;
+		border-radius: 5px;
+	}
+
+	.ibut, .ibut{
+		margin-left: 2rem;
+	}
+
+	button:hover {
+		transform: scale(1.1);
+		color: white;
+		background-color: gray;
+	}
+
+	button:active {
+		transform: scale(1);
+	}
+
+	input {
+		border: 1px solid;
+	}
+}
+
+.table-box {
+	margin-top: 2rem;
+}
+
+.table-sm {
+	text-align: center;
+
+	th {
+		background-color: rgb(30, 139, 195);
+		color: honeydew;
+		text-shadow: 1px 1px 1px black;
+		padding: 3px;
+
+	}
+
+	td,th{
+		border: 2px solid #444;
+	}
+
+	i {
+		font-size: 1rem;
+	}
+
+	button:hover {
+		transform: scale(1.1);
+		transition: 200ms;
+	}
+}
+
+td {
+	border: 2px solid #0362B1;
+	padding:2px 4px;
+}

@@ -1,0 +1,244 @@
+<h3>Enter Student Details</h3>
+<div class="form-box">
+	<!-- <form [formGroup]="student">
+		<div class="form-group">
+			<label>Enter the student name:</label>
+			<input type="name" name="student" class="form-control" formControlName="studentName">
+			<div class="warn" *ngIf="student.get('studentName').invalid && student.get('studentName').touched">
+				<div *ngIf="student.get('studentName').errors.required">This field is required.</div>
+				<div *ngIf="student.get('studentName').errors.pattern">Student name must contain min 4 and max 30 characters.</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<label>Enter the email id:</label>
+			<input type="email" name="email" class="form-control" formControlName="studentEmail">
+			<div class="warn" *ngIf="student.get('studentEmail').invalid && student.get('studentEmail').touched">
+				<div *ngIf="student.get('studentEmail').errors.required">This field is required.</div>
+				<div *ngIf="student.get('studentEmail').errors.pattern">Email should be in proper formate.</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label>Select the gender:</label> <br>
+			<input type="radio" name="gender" value="male" formControlName="studentName">Male
+			<input type="radio" name="gender" value="female" formControlName="studentName">Female
+		</div>
+
+		<div class="form-group">
+			<label>Select the qualification:</label>
+			<select name="qualification" class="form-control">
+				<option value="">Select qualification</option>
+				<option value="SSC">SSC</option>
+				<option value="HSC">HSC</option>
+				<option value="BCA">BCA</option>
+				<option value="MCA">MCA</option>
+				<option value="BE/Btech">BE/Btech</option>
+				<option value="ME/MTech">ME/MTech</option>
+				<option value="BSC">BSC</option>
+				<option value="MSC">MSC</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<label>Year of Completion:</label>
+			<input type="email" name="completion" class="form-control" formControlName="studentCompletion">
+			<div class="warn" *ngIf="student.get('studentCompletion').invalid && student.get('studentCompletion').touched">
+				<div *ngIf="student.get('studentCompletion').errors.required">This field is required.</div>
+				<div *ngIf="student.get('studentCompletion').errors.pattern">Completion should contain 2 numbers only.</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label>Enter the College Name:</label>
+			<input type="email" name="college" class="form-control" formControlName="studentName">
+			<div class="warn" *ngIf="student.get('studentName').invalid && student.get('studentName').touched">
+				<div *ngIf="student.get('studentName').errors.required">This field is required.</div>
+				<div *ngIf="student.get('studentName').errors.pattern">Enter college name properly.</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label>Enter the city of college:</label>
+			<input type="email" name="city" class="form-control" formControlName="studentName">
+			<div class="warn" *ngIf="student.get('studentName').invalid && student.get('studentName').touched">
+				<div *ngIf="student.get('studentName').errors.required">This field is required.</div>
+				<div *ngIf="student.get('studentName').errors.pattern">City name must contain min 4 and max 30 characters.</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label>Enter the Mobile no:</label>
+			<input type="email" name="mobile" class="form-control" formControlName="studentMobile">
+			<div class="warn" *ngIf="student.get('studentMobile').invalid && student.get('studentMobile').touched">
+				<div *ngIf="student.get('studentMobile').errors.required">This field is required.</div>
+				<div *ngIf="student.get('studentMobile').errors.pattern">Mobile number should contain 10 numbers.</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label>Enter work experience in year:</label>
+			<input type="email" name="experience" class="form-control" formControlName="studentExp">
+			<div class="warn" *ngIf="student.get('studentExp').invalid && student.get('studentExp').touched">
+				<div *ngIf="student.get('studentExp').errors.required">This field is required.</div>
+				<div *ngIf="student.get('studentExp').errors.pattern">Experience should contain 2 numbers.</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label>Enter the address:</label>
+			<input type="email" name="address" class="form-control" formControlName="studentName">
+			<div class="warn" *ngIf="student.get('studentName').invalid && student.get('studentName').touched">
+				<div *ngIf="student.get('studentName').errors.required">This field is required.</div>
+				<div *ngIf="student.get('studentName').errors.pattern">Address should be in proper formate</div>
+			</div>
+		</div>
+
+		<button class="btn btn-primary" [disabled]="student.invalid" (Click)="addStd(student)">Add student</button>
+	</form> -->
+
+	<form #refData="ngForm" (ngSubmit)="addStd(refData.value)">
+			<div class="form-group">
+			<label>Enter name:</label>
+			<input type="text" class="form-control" #refname="ngModel" name="name" placeholder="Enter student's name" [pattern]="namePattern" ngModel required>
+				<div class="warn" *ngIf=" refname.invalid && refname.touched">
+					<div *ngIf="refname.hasError('required')">
+					This field is required.
+					</div>
+					<div *ngIf="refname.hasError('pattern')">
+					Name must contain only character with minimum 3 and max 30.
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Enter email:</label>
+				<input type="text" name="email" #refemail="ngModel" class="form-control" placeholder="Enter student's email Id" pattern="([A-Za-z0-9_\-\.])+\@([A-Za-z_\-\.]{5})+\.([A-Za-z]{2,4})" ngModel required>
+				<div class="warn" *ngIf="refemail.invalid && refemail.touched">
+					<div *ngIf="refemail.hasError('required')">  
+					This field is required.
+					</div>
+					<div *ngIf="refemail.hasError('pattern')">
+					Email id should be in proper formate
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+			<label>Select the qualification:</label>
+			<select name="qualification" #refqual="ngModel" class="form-control" ngModel required>
+				<option value="">Select qualification</option>
+				<option value="{{qual}}" *ngFor="let qual of qualification">{{qual}}</option>
+			</select>
+				<div class="warn" *ngIf=" refqual.invalid && refqual.touched">
+					<div *ngIf="refqual.hasError('required')">
+					This field is required.
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Enter college name:</label>
+			<input type="text" class="form-control" #refcollege="ngModel" name="college" placeholder="Enter student's college" [pattern]="namePattern" ngModel required>
+				<div class="warn" *ngIf=" refcollege.invalid && refcollege.touched">
+					<div *ngIf="refcollege.hasError('required')">
+					This field is required.
+					</div>
+					<div *ngIf="refcollege.hasError('pattern')">
+					College name should be long.
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Enter college city:</label>
+			<input type="text" class="form-control" #refcity="ngModel" name="city" placeholder="Enter college city" [pattern]="namePattern" ngModel required>
+				<div class="warn" *ngIf=" refcity.invalid && refcity.touched">
+					<div *ngIf="refcity.hasError('required')">
+					This field is required.
+					</div>
+					<div *ngIf="refcity.hasError('pattern')">
+					City name name must contain only character with minimum 3 and max 30.
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Select gender:</label> <br>
+			<input type="radio" name="gender" value="male" ngModel required><span>Male</span> <br>
+			<input type="radio" name="gender" value="female" ngModel required><span>Female</span>
+			</div>
+
+			<div class="form-group">
+				<label>Enter completion year:</label>
+			<input type="number" class="form-control" #refcomp="ngModel" name="completion" placeholder="Enter the completion year" [pattern]="compPattern" ngModel required>
+				<div class="warn" *ngIf="refcomp.invalid && refcomp.touched">
+					<div *ngIf="refcomp.hasError('required')">
+					This field is required.
+					</div>
+					<div *ngIf="refcomp.hasError('pattern')">
+					contact should contain 4 numbers.
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Enter experience in years:</label>
+			<input type="number" class="form-control" #refexp="ngModel" name="experience" placeholder="Enter the experience" [pattern]="expPattern" ngModel required>
+				<div class="warn" *ngIf="refexp.invalid && refexp.touched">
+					<div *ngIf="refexp.hasError('required')">
+					This field is required.
+					</div>
+					<div *ngIf="refexp.hasError('pattern')">
+					contact should contain min 1 to max 2 numbers.
+					</div>
+				</div>
+			</div>
+
+
+			<div class="form-group">
+				<label>Enter address:</label>
+			<input type="text" class="form-control" #refaddress="ngModel" name="address" placeholder="Enter student's address" [pattern]="namePattern" ngModel required>
+			<div class="warn" *ngIf=" refaddress.invalid && refaddress.touched">
+					<div *ngIf="refaddress.hasError('required')">
+					This field is required.
+					</div>
+					<div *ngIf="refaddress.hasError('pattern')">
+					Adress must contain only character with minimum 3 and max 30
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+			<label>Select the course:</label>
+			<select name="course" class="form-control" ngModel>
+				<option value="">Select the course</option>
+				<option value="{{course.name}}" *ngFor="let course of coursesData">{{course.name}}</option>
+			</select>
+			</div>
+
+			<div class="form-group">
+			<label>Select the lighthouse branch:</label>
+			<select name="lighthouse" class="form-control" ngModel>
+				<option value="">Select the branch</option>
+				<option value="{{lighthouse.branch}}" *ngFor="let lighthouse of lighthouseData">{{lighthouse.branch}}</option>
+			</select>
+			</div>
+
+			<div class="form-group">
+				<label>Enter mobile no:</label>
+			<input type="number" class="form-control"  #refcontact="ngModel" name="mobile" placeholder="Enter student's mobile number" [pattern]="contactPattern" ngModel required>
+				<div class="warn" *ngIf="refcontact.invalid && refcontact.touched">
+					<div *ngIf="refcontact.hasError('required')">
+					This field is required.
+					</div>
+					<div *ngIf="refcontact.hasError('pattern')">
+					contact should contain min 10 numbers
+					</div>
+				</div>
+			</div>
+			
+			<div class="btn-box">
+				<button type="submit" class="btn btn-primary" [disabled]="refData.invalid" >Add Student</button>
+			</div>
+		</form>
+</div>

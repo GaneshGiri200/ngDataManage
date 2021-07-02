@@ -1,0 +1,53 @@
+<h3>Enter Course Details</h3>
+<div class="form-box">
+	<form #refData="ngForm" (ngSubmit)="updateCourse(refData.value)">
+
+			<div class="form-group">
+			<label>Enter name:</label>
+			<input type="text" class="form-control" #refname="ngModel" name="name" placeholder="Enter course Name" [pattern]="namePattern" [ngModel]=courseObj?.name>
+				<div class="warn" *ngIf=" refname.invalid && refname.touched">
+					<div *ngIf="refname.hasError('required')">
+					This field is required.
+					</div>
+					<div *ngIf="refname.hasError('pattern')">
+					Full name must contain only character with minimum 3 and max 30.
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Enter course duration in months:</label>
+			<input type="number" class="form-control" #refdur="ngModel" name="duration" placeholder="Enter course duration in months" [ngModel]=courseObj?.duration>
+				<div class="warn" *ngIf="refdur.invalid && refdur.touched">
+					<div *ngIf="refdur.hasError('required')">
+					This field is required.
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Enter course fees:</label>
+			<input type="number" class="form-control" #reffee="ngModel" name="fees" placeholder="Enter course fees"[ngModel]=courseObj?.fees>
+				<div class="warn" *ngIf="reffee.invalid && reffee.touched">
+					<div *ngIf="reffee.hasError('required')">
+					This field is required.
+					</div>
+				</div>
+			</div>
+
+
+			<div class="form-group">
+				<label>Enter course description</label>
+			<textarea type="textarea" class="form-control" #refdesc="ngModel" name="description" placeholder="Enter course description here" [ngModel]=courseObj?.description></textarea>
+			<div class="warn" *ngIf=" refdesc.invalid && refdesc.touched">
+					<div *ngIf="refdesc.hasError('required')">
+					This field is required.
+					</div>
+				</div>
+			</div>
+			
+			<div class="btn-box">
+				<button type="submit" class="btn btn-primary" [disabled]="refData.invalid" >Update Course</button>
+			</div>
+		</form>
+</div>

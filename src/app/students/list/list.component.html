@@ -1,0 +1,104 @@
+<div class="content-nav row">
+	<div class="col-md-8">
+		<button routerLink="/students/add"><i class="fa fa-plus" aria-hidden="true"></i> Add Student</button>
+		<button routerLink="/students/card" class="ibut" title="Grid View"><i class="fa fa-th-large" aria-hidden="true"></i> Grid</button>
+		<button routerLink="/students/list" class="ibut" title="List View"><i class="fa fa-th-list" aria-hidden="true"></i> List</button>
+	</div>
+	<div class="col-md-4">
+		<label for="Search">
+			<input type="text" placeholder="Search here" class="form-control" [(ngModel)]="searchKey">
+		</label>
+	</div>
+</div>
+
+<div class="table-box table-responsive">
+	<table class="table table-sm table-primary table-hover">
+		<thead>
+			<th>Student Id</th>
+			<th>Student Name</th>
+			<th>Email Id</th>
+			<th>Mobile No.</th>
+			<th>Actions</th>
+		</thead>
+		<tbody>
+			<tr *ngFor="let student of studentData |filter:searchKey | paginate: {itemsPerPage: 8, currentPage: p }">
+				<td>{{student.id}}</td>
+				<td>{{student.name}}</td>
+				<td>{{student.email}}</td>
+				<td>{{student.mobile}}</td>
+				<td>
+					<button class="btn btn-sm btn-outline-dark mb-1 mt-1 mx-1" title="View More Info" (click)="openModal(template)"><i class="fa fa-eye" aria-hidden="true" ></i></button>
+					<button class="btn btn-sm btn-outline-dark mb-1 mt-1 mx-1" title="Edit Student" [routerLink]="['/students/edit',student.id]"><i class="fa fa-pencil-square" aria-hidden="true" ></i></button>
+					<button class="btn btn-sm btn-outline-dark mb-1 mt-1 mx-1" title="Delete Student" (click)="delete(student.id)"><i class="fa fa-trash" aria-hidden="true" ></i></button>
+				</td>
+
+				<ng-template #template>
+			<div class="modal-header">
+				    <h4 class="modal-title pull-left">{{student.name}}</h4>
+				    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+				      <span aria-hidden="true">&times;</span>
+				    </button>
+				  </div>
+				  <div class="modal-body">
+				    <table class="table">
+				    	<tr>
+				    		<td>Id:</td>
+				    		<td>{{student.id}}</td>
+				    	</tr>
+				    	<tr>
+				    		<td>Email:</td>
+				    		<td>{{student.email}}</td>
+				    	</tr>
+				    	<tr>
+				    		<td>Gender:</td>
+				    		<td>{{student.gender}}</td>
+				    	</tr>
+				    	<tr>
+				    		<td>Qualification:</td>
+				    		<td>{{student.qualification}}</td>
+				    	</tr>
+				    	<tr>
+				    		<td>Address:</td>
+				    		<td>{{student.address}}</td>
+				    	</tr>
+				    	<tr>
+				    		<td>Passing Year:</td>
+				    		<td>{{student.yopass}}</td>
+				    	</tr>
+				    	<tr>
+				    		<td>College: </td>
+				    		<td>{{student.college}}</td>
+				    	</tr>
+				    	<tr>
+				    		<td>City of College:</td>
+				    		<td>{{student.city}}</td>
+				    	</tr>
+				    	<tr>
+				    		<td>Address: </td>
+				    		<td>{{student.address}}</td>
+				    	</tr>
+				    	<tr>
+				    		<td>Work Experience: </td>
+				    		<td>{{student.workexp}}</td>
+				    	</tr>
+				    	<tr>
+				    		<td>Course: </td>
+				    		<td>{{student.course}}</td>
+				    	</tr>
+				    	<tr>
+				    		<td>Lighthouse: </td>
+				    		<td>{{student.lighthouse}}</td>
+				    	</tr>
+				    </table>
+			</div>	
+		</ng-template>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="pagination">
+		<pagination-controls class="pages" (pageChange)="p = $event"></pagination-controls>
+	</div>
+
+	
+</div>

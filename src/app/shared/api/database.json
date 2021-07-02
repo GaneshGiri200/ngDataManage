@@ -1,0 +1,426 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin@123"
+    }
+  ],
+  "students": [
+    {
+      "id": 101,
+      "name": "Suresh Mane",
+      "email": "suresh@gmail.com",
+      "mobile": 5656546787,
+      "gender": "male",
+      "qualification": "BSC",
+      "yopass": 2018,
+      "college": "Sinhagad Arts and Science College",
+      "city": "Pune",
+      "address": "Ambegoan Pune",
+      "workexp": 3,
+      "lighthouse": "Warje Lighthouse",
+      "course": "Python"
+    },
+    {
+      "name": "Yogesh Mane",
+      "email": "yogesh@gamil.com",
+      "mobile": 4567896577,
+      "gender": "male",
+      "qualification": "HSC",
+      "yopass": 2019,
+      "college": "DY Patil College",
+      "city": "Pune",
+      "address": "vinayak Nagar, Kolhapur",
+      "workexp": 18,
+      "lighthouse": "Aundh Lighthouse",
+      "course": "Java Development",
+      "id": 103
+    },
+    {
+      "name": "Shruti kale",
+      "email": "shrutikale@gmail.com",
+      "mobile": 3454542453,
+      "gender": "female",
+      "qualification": "BE/Btech",
+      "yopass": 2019,
+      "college": "DY Patil College",
+      "city": "pune",
+      "address": "Swarget, Pune",
+      "workexp": 2,
+      "lighthouse": "Aundh Lighthouse",
+      "course": "Python Development",
+      "id": 104
+    },
+    {
+      "name": "Smiksha Pathak",
+      "email": "smiksha@gmail.com",
+      "mobile": 8978675678,
+      "gender": "female",
+      "qualification": "ME/MTech",
+      "yopass": 2015,
+      "college": "MIT College",
+      "city": "Pune ",
+      "address": "Mumbai",
+      "workexp": 2,
+      "lighthouse": "Bhavani Peth Lighthouse",
+      "course": "Graphic Design",
+      "id": 105
+    },
+    {
+      "name": "Prashant Mane",
+      "email": "prashant@gmail.com",
+      "mobile": 9878786745,
+      "gender": "male",
+      "qualification": "MSC",
+      "yopass": 2020,
+      "college": "DY Patil College",
+      "city": "Nagpur",
+      "address": "Pune",
+      "workexp": 0,
+      "course": "Graphic Design",
+      "lighthouse": "Hadapsar Lighthouse",
+      "id": 106
+    },
+    {
+      "name": "Vikas Kamble",
+      "email": "vikas@gmail.com",
+      "mobile": 907857685745,
+      "gender": "male",
+      "qualification": "HSC",
+      "yopass": 2020,
+      "college": "Sinhagad Arts and Science College",
+      "city": "Pune ",
+      "address": "Vadgaon Bk, Pune",
+      "workexp": 0,
+      "course": "PHP Development",
+      "lighthouse": "Bhavani Peth Lighthouse",
+      "id": 107
+    },
+    {
+      "name": "Sangita Rathod",
+      "email": "sangita@yahoo.com",
+      "mobile": 8977585678,
+      "gender": "female",
+      "qualification": "MCA",
+      "yopass": 2014,
+      "college": "PICT College",
+      "city": "Pune",
+      "address": "vinayak Nagar, Kolhapur",
+      "workexp": 5,
+      "course": "MEAN Stack",
+      "lighthouse": "Yerwada Lighthouse",
+      "id": 108
+    },
+    {
+      "name": "vinayak kale",
+      "email": "vinyakale@gmail.com",
+      "mobile": 9067465837,
+      "gender": "male",
+      "qualification": "BSC",
+      "yopass": 2020,
+      "college": "MIT College",
+      "city": "Pune ",
+      "address": "Nagpur",
+      "workexp": 1,
+      "course": "Java Development",
+      "lighthouse": "Aundh Lighthouse",
+      "id": 109
+    },
+    {
+      "name": "Adarsh Sagi",
+      "email": "adarsh@gamil.com",
+      "mobile": 7564758674,
+      "gender": "male",
+      "qualification": "BCA",
+      "yopass": 2019,
+      "college": "Sinhgad college of Engineering",
+      "city": "Pune ",
+      "address": "Swarget, Pune",
+      "workexp": 0,
+      "course": "MERN Stack",
+      "lighthouse": "Bibvewadi Lighthouse",
+      "id": 110
+    },
+    {
+      "name": "Gauri Sathe",
+      "email": "gauri@gmail.com",
+      "mobile": 7685668546,
+      "gender": "female",
+      "qualification": "BA",
+      "yopass": 2020,
+      "college": "Sinhagad Arts and Science College",
+      "city": "pune",
+      "address": "Swarget, Pune",
+      "workexp": 1,
+      "course": "Software Testing",
+      "lighthouse": "Yerwada Lighthouse",
+      "id": 111
+    },
+    {
+      "name": "Sanjay Mane",
+      "email": "snaju@gmail.com",
+      "mobile": 6574557353,
+      "gender": "male",
+      "qualification": "MBA",
+      "yopass": 2018,
+      "college": "MIT College",
+      "city": "Pune",
+      "address": "vinayak Nagar, Kolhapur",
+      "workexp": 3,
+      "course": "Web Designing",
+      "lighthouse": "Tingre Nagar Lighthouse",
+      "id": 112
+    },
+    {
+      "name": "Shushant Kolhe",
+      "email": "shushant@gmail.com",
+      "mobile": 5647463856,
+      "gender": "male",
+      "qualification": "MCA",
+      "yopass": 2018,
+      "college": "VIT college",
+      "city": "Latur",
+      "address": "vinayak Nagar, Kolhapur",
+      "workexp": 3,
+      "course": "Software Development",
+      "lighthouse": "Yerwada Lighthouse",
+      "id": 113
+    },
+    {
+      "name": "Vijay Rathod",
+      "email": "vijay@gmail.com",
+      "mobile": 76856574637,
+      "gender": "male",
+      "qualification": "BCA",
+      "yopass": 2019,
+      "college": "Rajshri College",
+      "city": "pune",
+      "address": "vinayak Nagar, Kolhapur",
+      "workexp": 2,
+      "course": "MERN Stack",
+      "lighthouse": "Warje Lighthouse",
+      "id": 114
+    },
+    {
+      "name": "Kartik Vani",
+      "email": "kartik@gmail.com",
+      "mobile": 65746573532,
+      "gender": "male",
+      "qualification": "SSC",
+      "yopass": 2020,
+      "college": "MIT College",
+      "city": "Pune",
+      "address": "Swarget, Pune",
+      "workexp": 0,
+      "course": "Web Designing",
+      "lighthouse": "Aundh Lighthouse",
+      "id": 115
+    },
+    {
+      "name": "Minal Gupta",
+      "email": "mina@gmail.com",
+      "mobile": 6774837583,
+      "gender": "female",
+      "qualification": "BCA",
+      "yopass": 2019,
+      "college": "MIT College",
+      "city": "pune",
+      "address": "Pune",
+      "workexp": 1,
+      "lighthouse": "Yerwada Lighthouse",
+      "course": "Web Designing",
+      "id": 116
+    },
+    {
+      "name": "Pravin Kamble",
+      "email": "vikas@gmail.com",
+      "mobile": 5687365873,
+      "gender": "male",
+      "qualification": "BBA",
+      "yopass": 2016,
+      "college": "Sinhagad college",
+      "city": "Akola",
+      "address": "Kolhapur",
+      "workexp": 2,
+      "course": "MEAN Stack",
+      "lighthouse": "Warje Lighthouse",
+      "id": 117
+    },
+    {
+      "name": "Suraj Rajmane",
+      "email": "suraj@gmail.com",
+      "mobile": 3653658734,
+      "gender": "male",
+      "qualification": "MCA",
+      "yopass": 2018,
+      "college": "MIT College",
+      "city": "mumbai",
+      "address": "Swarget, Pune",
+      "workexp": 3,
+      "course": "Python Development",
+      "lighthouse": "Hadapsar Lighthouse",
+      "id": 118
+    },
+    {
+      "name": "Sushil Pandhre",
+      "email": "sudhil@gmail.com",
+      "mobile": 5736375367,
+      "gender": "male",
+      "qualification": "MBA",
+      "yopass": 2017,
+      "college": "MIT College",
+      "city": "pune",
+      "address": "Kolhapur",
+      "workexp": 5,
+      "course": "Android Development",
+      "lighthouse": "Bhavani Peth Lighthouse",
+      "id": 119
+    }
+  ],
+  "courses": [
+    {
+      "name": "Python Development",
+      "duration": 3,
+      "fees": 40000,
+      "description": "Pyhton Core Language, Django Framwork, Database Integration This Python For Beginners Course Teaches You The Python Language Fast. Includes Python Online Training With Python 3.",
+      "id": 1001
+    },
+    {
+      "name": "Java Development",
+      "duration": 6,
+      "fees": 60000,
+      "description": "Get Noticed by the Top Hiring Companies with Simplilearn's Job Assist Program. Enroll Now! Learn Angular, Spring Boot, Hibernate, Servlets, JSPs, as well as MVC, SOA. Earn Master on Completion. Easy EMI Options. Money Back Guarantee.",
+      "id": 1002
+    },
+    {
+      "name": "Web Designing",
+      "duration": 3,
+      "fees": 20000,
+      "description": "Web Design & Ui/Ux Training Institute With 100% Practicals. 10+ Modules. Iso Certificate. Advance Web Design & Ui/Ux Courses. Live Projects. Industrial Training. Internship Program.",
+      "id": 1003
+    },
+    {
+      "name": "Angular Developer",
+      "duration": 4,
+      "fees": 30000,
+      "description": "Angular Course, Full Angular Online Training, Live Classes with working professionals.",
+      "id": 1004
+    },
+    {
+      "name": "MEAN Stack",
+      "duration": 6,
+      "fees": 60000,
+      "description": "This Full Stack MEAN Developer program provides complete knowledge of software development and testing technologies such as JavaScript, Node.js, Angular, Docker, and Protractor. You'll build an end-to-end application, test and deploy code, and store data using MongoDB.",
+      "id": 1005
+    },
+    {
+      "name": "MERN Stack",
+      "duration": 4,
+      "fees": 40000,
+      "description": "MERN stands for MongoDB, Express, React, Node, after the four key technologies that make up the stack",
+      "id": 1006
+    },
+    {
+      "name": "Graphic Design",
+      "duration": 3,
+      "fees": 30000,
+      "description": "Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users' specific needs and focus on the logic of displaying elements in interactive designs",
+      "id": 1007
+    },
+    {
+      "name": "Software Development",
+      "duration": 5,
+      "fees": 50000,
+      "description": "Software development is the process programmers use to build computer programs. The process, also known as the Software Development Life Cycle (SDLC), includes several phases that provide a method for building products",
+      "id": 1008
+    },
+    {
+      "name": "Android Development",
+      "duration": 6,
+      "fees": 60000,
+      "description": " Android app developers. Provides the Android SDK tools and API documentation. ... Sample Code. Jump-start your development using these sample projects.",
+      "id": 1009
+    },
+    {
+      "name": "Software Testing",
+      "duration": 3,
+      "fees": 30000,
+      "description": "Software testing involves the execution of a software component or system component to evaluate one or more properties of interest. In general, these properties ",
+      "id": 1010
+    },
+    {
+      "name": "PHP Development",
+      "duration": 3,
+      "fees": 30000,
+      "description": "PHP development began in 1994 when Rasmus Lerdorf wrote several Common Gateway Interface (CGI) programs in C, which he used to maintain his personal homepage. He extended them to work with web forms and to communicate with databases",
+      "id": 1011
+    }
+  ],
+  "lighthouse": [
+    {
+      "id": 1,
+      "branch": "Warje Lighthouse",
+      "address": "warje, Pune",
+      "email": "warje@lighthouse.com",
+      "mobile": 5656546787,
+      "cordinator": "Aman Kolhe"
+    },
+    {
+      "branch": "Yerwada Lighthouse",
+      "cordinator": "Shaila Mane",
+      "email": "yerwada@lighthouse.com",
+      "mobile": 3456576876,
+      "address": "yerwada, Pune",
+      "id": 2
+    },
+    {
+      "branch": "Aundh Lighthouse",
+      "cordinator": "vishal dalvi",
+      "email": "aundh@lighthouse.com",
+      "mobile": 5676874657,
+      "address": "Aundh, Pune",
+      "id": 3
+    },
+    {
+      "branch": "Bhavani Peth Lighthouse",
+      "cordinator": "Vinayak Raut",
+      "email": "bhavanipeth@lighthouse.com",
+      "mobile": 7685768576,
+      "address": "Bhavani Peth, Pune",
+      "id": 4
+    },
+    {
+      "branch": "Bibvewadi Lighthouse",
+      "cordinator": "Minal Vadgavkar",
+      "email": "bibvewadi@lighthouse.com",
+      "mobile": 7869586756,
+      "address": "Bibvewadi, Pune",
+      "id": 5
+    },
+    {
+      "branch": "Hadapsar Lighthouse",
+      "cordinator": "Santosh Jayraj",
+      "email": "hadapsar@lighthouse.com",
+      "mobile": 7687968576,
+      "address": "Hadapsar, Pune",
+      "id": 6
+    },
+    {
+      "branch": "Tingre Nagar Lighthouse",
+      "cordinator": "Trupti Jhadhav",
+      "email": "tingre@lighthouse.com",
+      "mobile": 8978675867,
+      "address": "Tingre Nagar, Pune",
+      "id": 7
+    },
+    {
+      "branch": " Wadgaon Sheri Lighthouse",
+      "cordinator": "Ankita Moholkar",
+      "email": "wadgaon@lighthouse.com",
+      "mobile": 8798675867,
+      "address": " Wadgaon Sheri, Pune",
+      "id": 8
+    }
+  ]
+}

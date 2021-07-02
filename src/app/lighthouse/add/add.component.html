@@ -1,0 +1,75 @@
+<h3>Enter Lighthouse Details</h3>
+<div class="form-box">
+
+	<form #refData="ngForm" (ngSubmit)="addBranch(refData.value)">
+
+			<div class="form-group">
+			<label>Enter lighthouse branch:</label>
+			<input type="text" class="form-control" #refname="ngModel" name="branch" placeholder="Enter lighhouse branch" [pattern]="namePattern" ngModel required>
+				<div class="warn" *ngIf=" refname.invalid && refname.touched">
+					<div *ngIf="refname.hasError('required')">
+					This field is required.
+					</div>
+					<div *ngIf="refname.hasError('pattern')">
+					Name must contain only character with minimum 3 and max 30.
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+			<label>Enter co-ordinator name:</label>
+			<input type="text" class="form-control" #refcord="ngModel" name="cordinator" placeholder="Enter co-ordinator name" [pattern]="namePattern" ngModel required>
+				<div class="warn" *ngIf=" refcord.invalid && refcord.touched">
+					<div *ngIf="refcord.hasError('required')">
+					This field is required.
+					</div>
+					<div *ngIf="refcord.hasError('pattern')">
+					Name must contain only character with minimum 3 and max 30.
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Enter email:</label>
+				<input type="text" name="email" #refemail="ngModel" class="form-control" placeholder="Enter lighthouse email id" pattern="([A-Za-z0-9_\-\.])+\@([A-Za-z_\-\.]{5})+\.([A-Za-z]{2,4})" ngModel required>
+				<div class="warn" *ngIf="refemail.invalid && refemail.touched">
+					<div *ngIf="refemail.hasError('required')">  
+					This field is required.
+					</div>
+					<div *ngIf="refemail.hasError('pattern')">
+					Email id should be in proper formate
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Enter address:</label>
+			<input type="text" class="form-control" #refaddress="ngModel" name="address" placeholder="Enter lighthouse branch address" [pattern]="namePattern" ngModel required>
+			<div class="warn" *ngIf=" refaddress.invalid && refaddress.touched">
+					<div *ngIf="refaddress.hasError('required')">
+					This field is required.
+					</div>
+					<div *ngIf="refaddress.hasError('pattern')">
+					Adress must contain only character with minimum 3 and max 30
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label>Enter mobile no:</label>
+			<input type="number" class="form-control"  #refcontact="ngModel" name="mobile" placeholder="Enter mobile number" [pattern]="contactPattern" ngModel required>
+				<div class="warn" *ngIf="refcontact.invalid && refcontact.touched">
+					<div *ngIf="refcontact.hasError('required')">
+					This field is required.
+					</div>
+					<div *ngIf="refcontact.hasError('pattern')">
+					Contact should contain min 10 numbers
+					</div>
+				</div>
+			</div>
+			
+			<div class="btn-box">
+				<button type="submit" class="btn btn-primary" [disabled]="refData.invalid" >Add Lighthouse</button>
+			</div>
+		</form>
+</div>
