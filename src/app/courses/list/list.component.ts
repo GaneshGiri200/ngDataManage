@@ -32,7 +32,7 @@ export class ListComponent implements OnInit {
   }
 
   delete(val:any, name:any){
-    if(confirm("Are you sure to delete "+name+"course ?")){
+    if(confirm("Are you sure to delete "+name+" course ?")){
       this._globSer.deleteUser("courses", val).subscribe(()=>{
         alert("Course deleted successfully");
         this.fetchData();
