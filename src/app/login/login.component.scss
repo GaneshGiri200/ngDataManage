@@ -38,6 +38,24 @@ input {
 	border: 1px solid;
 }
 
+.marq{
+	border-radius: 1rem;
+	background-color: #FFFF84;
+
+
+	marquee {
+		border-bottom-left-radius: 1rem;
+		border-bottom-right-radius: 1rem;
+		background-color: #FFFF84;
+		border-top: 1px solid;
+		padding-top: 2px;
+	}
+
+	b {
+		padding: 1px 5px;
+	}
+}
+
 .butn {
 	margin: 1rem 0 1.5rem;
 }
